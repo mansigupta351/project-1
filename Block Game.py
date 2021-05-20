@@ -14,7 +14,7 @@ HEIGHT = 600
 #deciding the color of blocks,text,backgroundcolor
 RED = (255 , 0,0)
 BLUE = (0 ,0 ,255)
-YELLOW = (255 ,255,0)
+black = (0 ,0, 0)
 BACKGROUND_COLOR = (11,238,207)
 
 #deciding the size of block of player
@@ -123,7 +123,7 @@ while not game_over:
     score = update_enemy_positions(enemy_list,score)
     SPEED = set_level(score ,SPEED)
     text = "score:" + str(score)
-    label = myFont.render(text , 1, YELLOW) 
+    label = myFont.render(text , 1, black) 
 
     window.blit(label , (WIDTH -200 , HEIGHT-40))
     
