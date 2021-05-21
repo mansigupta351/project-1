@@ -110,9 +110,9 @@ while not game_over:
             y = player_pos[1]
 
             if event.key == pygame.K_LEFT:
-                x -= 5
+                x -= 10
             elif event.key == pygame.K_RIGHT:
-                x += 5
+                x += 10
 
             player_pos = [x,y]
 
