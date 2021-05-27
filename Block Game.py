@@ -4,8 +4,12 @@ import pygame
 import random
 import sys
 
+from pygame import mixer
 #initialising pygame so that it takes command of pygame properly
 pygame.init()
+
+mixer.music.load('background.wav')
+mixer.music.play(-1)
 
 #initialising the height and width of the box 
 WIDTH = 800
